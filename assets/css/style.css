@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+.cards-inf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  padding-top: 30vh;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 390px;
+  min-height: 250px;
+  border: none;
+  border-radius: 10px;
+  padding: 40px;
+  color: #ffffff;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.sale {
+  background: linear-gradient(
+    263deg,
+    rgb(212, 100, 109) 3%,
+    rgb(240, 168, 86) 100%
+  );
+}
+.order {
+  background: linear-gradient(
+    270deg,
+    rgba(54, 137, 230, 1) 3%,
+    rgba(130, 212, 254, 1) 100%
+  );
+}
+.online {
+  background: linear-gradient(
+    94deg,
+    rgba(7, 226, 227, 1) 3%,
+    rgba(16, 157, 171, 1) 100%
+  );
+}
+.header-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.title-card {
+  font-size: 25px;
+}
+.total-card {
+  font-size: 35px;
+}
+.card-icon {
+  height: 25px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+.text-percent{
+  display: block;
+  position: relative;
+}
+
+.text-percent::before,
+.text-percent::after {
+  content: "";
+  display: block;
+  height: 220px;
+  width: 220px;
+  background-color: rgba(238, 233, 231, 0.103);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+}
+.text-percent::before {
+  right: -125px;
+  bottom: -5px;
+}
+.text-percent::after {
+  right: -42px;
+  top: -38px;
+}
+@media screen and (max-width: 1080px) {
+  .cards-inf {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    padding-top: 10vh;
+  }
+}
+
